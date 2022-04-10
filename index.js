@@ -4,7 +4,6 @@ module.exports = {
     console.warn(msg);
     console.log(msg);
     console.assert(1 === 1, "1 === 1");
-    console.assert(1 === 2, "1 === 2");
   },
   assertFailure: () => {
     console.assert(1 === 2, "1 === 2");
