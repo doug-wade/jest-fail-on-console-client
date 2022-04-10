@@ -7,8 +7,8 @@ describe("test client", () => {
 
   it("all four", () => {
     const mockMessage = "I'm a message";
-    jest.spyOn(console, "warn");
-    jest.spyOn(console, "error");
+    jest.spyOn(console, "warn").mockImplementation();
+    jest.spyOn(console, "error").mockImplementation();
 
     allFour(mockMessage);
 

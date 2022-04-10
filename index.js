@@ -3,13 +3,14 @@ module.exports = {
     console.error(msg);
     console.warn(msg);
     console.log(msg);
-    console.assert(false, "false");
+    console.assert(1 === 1, "1 === 1");
+    console.assert(1 === 2, "1 === 2");
   },
   assertFailure: () => {
-    console.assert(false, "false");
+    console.assert(1 === 2, "1 === 2");
   },
   assertSuccess: () => {
-    console.assert(true, "true");
+    console.assert(1 === 1, "1 === 1");
   },
   log: (msg) => {
     console.log(msg);
